@@ -1,0 +1,21 @@
+create table users(
+	user_id serial,
+	user_name varchar(255),
+	user_email varchar(55),
+	user_pasword varchar(255),
+	constraint user_id_pk primary key(user_id)
+)
+
+create table positions(
+	pos_id serial,
+	pos_job varchar(255),
+	pos_description varchar(55),
+	pos_location varchar(255),
+	pos_work varchar(25),
+	pos_salary numeric(10,2),
+	constraint pos_id_pk primary key(pos_id)
+)
+
+INSERT INTO USERS(user_id,user_name,user_email,user_password) VALUES (1,'hasan','hasan@gmail.com','cobadong')
+
+INSERT INTO POSITIONS(pos_id,pos_job,pos_description,pos_location,pos_work,pos_salary) VALUES (1,'programmer','java','yogyakarta','parttime',3000000)
